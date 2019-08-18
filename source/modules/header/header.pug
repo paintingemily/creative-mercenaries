@@ -14,15 +14,5 @@ mixin header(data)
 			.header__menu
 				+main-menu(mainMenu.default)
 
-			+button(
-				to="//github.com/zoxon/gulp-front"
-				target="_blank"
-				rel="nofollow noopener"
-				title="Source on Github"
-				icon
-			).header__github-button
-				+icon(name="github-octocat" title="Github octocat mark")
-				span.visuallyhidden Github repository
-
 			.header__mobile-menu-trigger
 				+mobile-menu-trigger()

@@ -5,8 +5,9 @@ mixin header-presentation(data)
 		data-0="opacity: 1; transform: translateY(0px);" 
 		data-300="opacity: 0; transform: translateY(10px);"
 	)&attributes(attributes)
-		h1.header-presentation__name= data.name
-		p.header-presentation__description= data.description
-		.header-presentation__version= 'v. ' + data.version
-		.header-presentation__sub-description= data.subDescription
-		+button(to="#quick-start" color="black" style="ghost rounded" size="large" block).header-presentation__download Getting Started
+		.video-container
+			video(playsinline autoplay muted loop poster="assets/images/content/up.jpg" id="bgvid")
+				source(src="assets/images/content/up.webm" type="video/webm")
+				source(src="assets/images/content/up.mp4" type="video/mp4")
+		
+		img(src="http://placekitten.com/g/300/300" alt="logo")

@@ -1,9 +1,30 @@
 .main-page
 	&__header
-		margin-bottom 32px
+		// margin-bottom 32px
 
 	&__section
-		margin-bottom 32px
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		// margin-bottom 32px
+		height 100vh
+
+		.people-list
+			max-width 600px
+			list-style none
+			text-align center
+
+			.person
+				display inline-block
+				padding 15px
+
+		.address
+			> span
+				display block
+
+	&__text
+		max-width 600px
 
 	&__section_quick-start
 		margin-right auto

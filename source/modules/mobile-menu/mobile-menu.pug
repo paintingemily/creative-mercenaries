@@ -12,9 +12,3 @@ mixin mobile-menu(data)
 				each item in data
 					li.mobile-menu__item
 						a(href=`${item.url}.html`).mobile-menu__link= item.title
-
-						if item.submenu
-							ul.mobile-menu__submenu
-								each subItem in item.submenu
-									li.mobile-menu__item
-										a(href=`${item.url}.html#${subItem.hash}`).mobile-menu__submenu-link= subItem.title

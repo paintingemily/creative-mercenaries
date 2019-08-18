@@ -9,7 +9,7 @@ export default () => {
       document.querySelector(".header").offsetHeight
     );
     const duration = 700;
-    const offset = headerHeight + 20;
+    const offset = 0;
 
     Array.prototype.forEach.call(links, link => {
       link.addEventListener("click", event => {
